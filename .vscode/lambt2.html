@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDU Clock</title>
+  <link rel="stylesheet" href="lambt2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>UDU Clock</h1>
+    <div class="input">
+      <input type="number" id="minutes" placeholder="Phút" style="width: 50px;">
+      <span style="margin: 0 5px;">:</span>
+      <input type="number" id="seconds" placeholder="Giây" style="width: 50px;">
+    </div>
+    <div class="button">
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+
+  <audio id="alarm-sound" src="alarm.mp3" loop></audio>
+
+  <script src="lambt2.js"></script>
+</body>
+</html>

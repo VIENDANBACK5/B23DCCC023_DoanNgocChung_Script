@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .highlight {
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Women's Day!</h1>
+    <p>Celebrating the achievements and contributions of women around the world.</p>
+    <button id="refreshBtn" class="highlight">Refresh the message</button>
+  </div>
+
+  <script> 
+    const container = document.querySelector('.container');
+    const messages = [
+      'You are powerful!',
+      'You are resilient!',
+      'Keep shining, ladies!',
+      'Happy International Women\'s Day!',
+    ];
+
+    document.getElementById('refreshBtn').addEventListener('click', () => {
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      container.innerHTML = `
+        <h1>Happy Women's Day!</h1>
+        <p>${messages[randomIndex]}</p>
+      `;
+    });
+
+    // Display a random message on page load
+    window.onload = () => {
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      container.innerHTML = `
+        <h1>Happy Women's Day!</h1>
+        <p>${messages[randomIndex]}</p>
+      `;
+    };
+  </script>
+</body>
+</html>

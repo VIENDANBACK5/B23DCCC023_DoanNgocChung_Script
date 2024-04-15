@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+
+}
+.sidebar{
+    width: 20em;
+
+}
+
+.sidebar-text {
+    flex: 1;
+    background-color: #1F5F9E;
+    padding: 20px;
+}
+
+.sidebar-item-1{
+    background-image:20%;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+}
+
+
+    
+.bgc{
+    background-color: aliceblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav ul li {
+        display: inline-block; /* hoặc display: inline-block; */
+        margin-right: 10px; /* Khoảng cách giữa các mục */
+        justify-content: space-around;
+}
+nav {
+    background-color: #428BCA; /* Màu nền của thanh điều hướng */
+    height: 50px; /* Chiều cao của thanh điều hướng */
+    padding: 10px; /* Khoảng cách nội dung và biên ngoài của thanh điều hướng */
+}
+
+.mydiv {
+    background-color: #f0f0f0; /* Màu nền của div */
+    padding: 10px; /* Khoảng cách giữa nội dung và biên của div */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
+    justify-content: space-between; /* Căn chỉnh các phần tử con ở hai đầu của div */
+    align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc */
+}
+
+.mydiv input[type="text"] {
+    width: 150px; /* Độ rộng của ô tìm kiếm */
+    margin-left: auto; /* Đẩy ô tìm kiếm về phía bên phải của div */
+}
